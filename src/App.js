@@ -15,16 +15,17 @@ class App extends React.Component{
   }
   
 
- componentDidMount = ()=>{
-    const returned = localStorage.getItem("theitems");
-    const jsondata = JSON.parse(returned);
-    this.setState({returneditems: jsondata })
-  }
+//  componentDidMount = ()=>{
+//     const returned = localStorage.getItem("theitems");
+//     console.log(returned[0])
+//     const jsondata = JSON.parse(returned);
+//     this.setState({returneditems: jsondata })
+//   }
 
-  componentDidUpdate = ()=>{
-    const itemly = JSON.stringify(this.state.returneditems);
-    localStorage.setItem('theitems', itemly);
-  }
+//   componentDidUpdate = ()=>{
+//     const itemly = JSON.stringify(this.state.returneditems);
+//     localStorage.setItem('theitems', itemly);
+//   }
 
   getDatafromApi = (e) =>{
     e.preventDefault();
