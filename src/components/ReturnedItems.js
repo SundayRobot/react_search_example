@@ -13,7 +13,7 @@ const ReturnedItems = (props) =>{
             <img className="item-image" src={item && item.links && item.links[0].href} alt={item.data[0].nasa_id} />
             <div className="item-content">
               <h3 className="descriptive-h3">{item.data[0].title.length < 20 ? `${item.data[0].title}` : `${item.data[0].title.substring(0,25)}...`}</h3><br/>
-              <p className="descriptive-text">{desc1.length < 90 ? desc1 : `${desc1.substring(0,95)}...`}</p><br/>
+              <p className="descriptive-text">{desc1.length < 90 ? desc1 : `${desc1.substring(0,80)}...`}</p><br/>
               <button className="read-more-button">
                 <Link to={{pathname: `/item/${item.data[0].nasa_id}`, 
                 state: {

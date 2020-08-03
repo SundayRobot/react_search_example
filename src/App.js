@@ -65,6 +65,7 @@ class App extends React.Component{
     return (
       <div>
         <header>
+          <h3 className="h3_in_header">Search the NASA image api</h3>
           <Form getResultsFunction = {this.getDatafromApi}/>
         </header>
         <div className="main-container">
