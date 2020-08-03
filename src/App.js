@@ -15,9 +15,9 @@ class App extends React.Component{
   }
   
 
- componentDidMount = async ()=>{
+ componentDidMount = ()=>{
     const returned = localStorage.getItem("theitems");
-    const jsondata = await JSON.parse(returned);
+    const jsondata = JSON.parse(returned);
     this.setState({returneditems: jsondata })
   }
 
