@@ -68,7 +68,7 @@ class App extends React.Component{
           <Form getResultsFunction = {this.getDatafromApi}/>
         </header>
         <div className="main-container">
-          <p className="noentries">{this.state.returneditems.length < 1 ? `no results for "${this.state.inputValue}"`: this.state.blank}</p>
+          {/* <p className="noentries">{this.state.returneditems.length < 1 ? `no results for "${this.state.inputValue}"`: this.state.blank}</p> */}
           <ReturnedItems itemsinstate = {this.state.returneditems} />
        </div>
       </div>
