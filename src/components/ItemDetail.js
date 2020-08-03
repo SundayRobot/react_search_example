@@ -48,7 +48,7 @@ class ItemDetail extends React.Component{
                   })}
             </div>
             : '' }
-          <button className="item-detail-go-back-button"><Link to="/">GO BACK</Link></button>
+          <button className="item-detail-go-back-button"><Link to="/react_search_example/">GO BACK</Link></button>
           </div>
         </div>
           }
